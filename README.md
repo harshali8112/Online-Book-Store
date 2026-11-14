@@ -1,22 +1,55 @@
-# Online-Book-Store
-📖 Overview
-The Online Book Store is a database-driven project built on PostgreSQL.
-It manages books, customers, orders, and sales records with efficient SQL queries.
-The focus is on advanced SQL techniques to handle real-world scenarios like filtering, aggregations, and reporting.
+# 📚 Online Book Store (PostgreSQL)
 
-⚙️ Features
-Store and manage book details (title, author, genre, price, stock).
+**A database-driven project that manages books, customers and orders, with advanced SQL queries for real-world reporting.**
 
-Track customer information and purchase history.
+## Overview
 
-Handle orders with multiple books and quantities.
+The Online Book Store is built entirely on PostgreSQL. It stores book details, customer information and orders, and uses analytical SQL to answer business questions about sales, customers and inventory.
 
-Generate analytical reports using advanced SQL queries.
+## Screenshots
 
-🛠️ Tech Stack
-Database: PostgreSQL
+![Query output 1](ss1.png)
+![Query output 2](ss2.png)
 
-Queries: SQL (Advanced)
-(eg HAVING ,GROUP BY,Coalesce ,Order By etc)
+## Features
 
-Tools Used: pgAdmin / psql
+- Store and manage book details: title, author, genre, price and stock
+- Track customer information and purchase history
+- Handle orders with multiple books and quantities
+- Generate analytical reports with advanced SQL
+
+## SQL Concepts Used
+
+| Concept | Used for |
+|---|---|
+| `GROUP BY` and aggregate functions | Sales totals per genre, author or customer |
+| `HAVING` | Filtering aggregated results |
+| `COALESCE` | Handling NULL values in reports |
+| `ORDER BY` | Ranking top books and customers |
+| Joins | Combining books, customers and orders |
+
+## Dataset
+
+| File | Contents |
+|---|---|
+| `Books.csv` | Book catalog |
+| `Customers.csv` | Customer details |
+| `Orders.csv` | Orders and quantities |
+| `OnlineBookstore.sql` | Table creation and analysis queries |
+
+## Tech Stack
+
+- **Database:** PostgreSQL
+- **Language:** SQL (advanced queries)
+- **Tools:** pgAdmin / psql
+
+## How to Run
+
+1. Create a new PostgreSQL database.
+2. Run `OnlineBookstore.sql` in pgAdmin or psql to create the tables and queries.
+3. Import `Books.csv`, `Customers.csv` and `Orders.csv` into the matching tables.
+4. Run the analysis queries and compare with the screenshots above.
+
+---
+
+👩‍💻 Built by [Harshali](https://github.com/harshali8112) · 📫 info.harshali268@gmail.com
